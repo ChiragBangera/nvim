@@ -30,8 +30,31 @@ return {
         enable = true,
         update_root = true,
       },
+      view = {
+        width = 34,
+        side = "left",
+        preserve_window_proportions = true,
+      },
       renderer = {
+        highlight_git = true,
+        highlight_opened_files = "name",
+        indent_markers = {
+          enable = true,
+        },
         group_empty = true,
+        icons = {
+          glyphs = {
+            git = {
+              unstaged = "M",
+              staged = "+",
+              unmerged = "C",
+              renamed = "R",
+              untracked = "?",
+              deleted = "D",
+              ignored = "I",
+            },
+          },
+        },
       },
       filters = {
         enable = true,
