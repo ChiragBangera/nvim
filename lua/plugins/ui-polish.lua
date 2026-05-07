@@ -1,5 +1,40 @@
 return {
   {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    opts = {
+      transparent_mode = true,
+      contrast = "hard",
+      overrides = {
+        Function = { fg = "#83a598", bold = true },
+        ["@function"] = { fg = "#83a598", bold = true },
+        ["@lsp.type.function"] = { fg = "#83a598", bold = true },
+
+        Type = { fg = "#fabd2f", bold = true },
+        ["@type"] = { fg = "#fabd2f", bold = true },
+        ["@lsp.type.enum"] = { fg = "#fabd2f", bold = true },
+
+        Identifier = { fg = "#ebdbb2" },
+        ["@variable"] = { fg = "#ebdbb2" },
+
+        Constant = { fg = "#fe8019", bold = true },
+        ["@constant"] = { fg = "#fe8019", bold = true },
+        ["@lsp.type.enumMember"] = { fg = "#fe8019", bold = true },
+
+        Special = { fg = "#d3869b", bold = true },
+        ["@lsp.type.parameter"] = { fg = "#8ec07c" },
+      },
+    },
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
+
+  {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(_, opts)
