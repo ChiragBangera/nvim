@@ -72,7 +72,7 @@ return {
     opts = function(_, opts)
       opts.presets = vim.tbl_deep_extend("force", opts.presets or {}, {
         bottom_search = false,
-        command_palette = true,
+        command_palette = false,
         long_message_to_split = true,
         lsp_doc_border = true,
       })
