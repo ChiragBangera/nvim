@@ -103,8 +103,9 @@ return {
         single_file_support = true,
       })
 
-      vim.diagnostic.config({
+      opts.diagnostics = vim.tbl_deep_extend("force", opts.diagnostics or {}, {
         virtual_text = {
+          current_line = true,
           spacing = 2,
           source = "if_many",
         },
